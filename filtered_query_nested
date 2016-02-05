@@ -1,0 +1,30 @@
+{
+  "query": {
+    "filtered": {
+      "query": {
+        "match_all": {}
+      },
+      "filter": {
+        "nested" : {
+          "path" : "child_doc",
+          "filter": {
+            "bool": {
+              "must": [
+                {
+                  "term" : {
+                    "child_doc.xxx": "value"
+                  }
+                },
+                {
+                  "term" : {
+                    "child_doc.yyy": "value"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
