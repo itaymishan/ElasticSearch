@@ -1,0 +1,24 @@
+nested: {
+  path: :'path',
+  query: {
+    bool: {
+      must: [
+        {
+          range: {
+            'field1': {
+              lte: params[:x1] + 1,
+              gte: params[:x2] - 1
+            }
+          }
+        },
+        {
+          range: {
+            field2: {
+              lte: params[:x3]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
