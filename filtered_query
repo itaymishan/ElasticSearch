@@ -1,0 +1,15 @@
+{
+  "query": {
+    "filtered": {
+      "query": {
+        "match_all": {}
+      },
+      "filter": {
+        "term": {
+          "field1": "value",
+          "field2": "value"
+        }
+      }
+    }
+  }
+}
