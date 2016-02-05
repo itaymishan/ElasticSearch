@@ -1,0 +1,23 @@
+"filter" : {
+    "bool" : {
+        "must" : {
+            "nested" : {
+                "path" : "xxx.yyy"
+                "filter" : {
+                    "range" : {
+                        "xxx.yyy.eee" : { "from" : 5 }
+                    }
+                } 
+            }
+        },
+        "must_not" : {
+            "nested" : {
+                "filter" : {
+                    "range" : {
+                        "xxx.yyy.eee" : { "lte" : 5 }
+                    }
+                } 
+            }
+        }
+    }
+}
