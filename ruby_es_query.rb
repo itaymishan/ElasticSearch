@@ -6,7 +6,7 @@ class FetchPackQuery < ActiveQuery
           query: { match_all: {} },
           filter: {
             nested: {
-              path: "dishes_info",
+              path: "path",
               query:{
                 filtered: {
                   query: { match_all: {} },
