@@ -12,7 +12,7 @@ class FetchPackQuery < ActiveQuery
                   query: { match_all: {} },
                   filter: {
                     and: [
-                      #{term: {'dishes_info.platter_id': 810 }}#,
+                      {term: {'rr.ee': 810 }},
                       {term: {'dishes_info.dish_type': 2 }}
                     ]
                   }
