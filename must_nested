@@ -14,7 +14,7 @@
             "nested" : {
                 "filter" : {
                     "range" : {
-                        "xxx.yyy.eee" : { "lte" : 5 }
+                        "xxx.yy.eee" : { "lte" : 5 }
                     }
                 } 
             }
