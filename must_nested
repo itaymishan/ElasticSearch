@@ -5,7 +5,7 @@
                 "path" : "xxx.yyy"
                 "filter" : {
                     "range" : {
-                        "xxx.yyy.eee" : { "from" : 5 }
+                        "xx.yyy.eee" : { "from" : 5 }
                     }
                 } 
             }
