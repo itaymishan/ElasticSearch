@@ -12,8 +12,8 @@ class FetchPackQuery < ActiveQuery
                   query: { match_all: {} },
                   filter: {
                     and: [
-                      {term: {'rr.ee': 810 }},
-                      {term: {'dishes_info.dish_type': 2 }}
+                      {term: {'xx.xx': 810 }},
+                      {term: {'xx.xx': 2 }}
                     ]
                   }
                 }
@@ -33,7 +33,7 @@ class FetchPackQuery < ActiveQuery
         filter: {
           bool: {
             must: [
-              params[:dish_type].blank? ?
+              params[:xx].blank? ?
               {
                 match_all: {}
               } :
