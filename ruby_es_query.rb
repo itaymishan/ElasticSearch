@@ -69,7 +69,7 @@ class FetchPackQuery < ActiveQuery
               {
                 match: {
                   platter_short_desciption:{
-                    query: dishs_info[:free_text],
+                    query: ww[:free_text],
                     boost: 2
                   }
                 }
@@ -77,7 +77,7 @@ class FetchPackQuery < ActiveQuery
               {
                 match: {
                   platter_title: {
-                    query: dishs_info[:free_text],
+                    query: ww[:free_text],
                     boost: 3
                   }
                 }
