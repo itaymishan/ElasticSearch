@@ -95,10 +95,10 @@ class FetchPackQuery < ActiveQuery
       bool: {
         must: {
           term: {
-            dish_type: dishs_info[:dish_type]
+            dish_type: dishs_info[:tt]
           },
           term: {
-            platter_type_id: dishs_info[:diet_prefs]
+            platter_type_id: dishs_info[:tt]
           }
         }#,
         # should: {
