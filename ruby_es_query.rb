@@ -25,10 +25,10 @@ class FetchPackQuery < ActiveQuery
     }
   end
 
-  def dish_info_filter(dishs_info)
+  def dish_info_filter(param)
     { # start nested
       nested: {
-        path: :dishes_info,
+        path: :param,
         score_mode: 'max',
         filter: {
           bool: {
@@ -39,7 +39,7 @@ class FetchPackQuery < ActiveQuery
               } :
               {
                 term: {
-                  dish_type: dishs_info[:dish_type]
+                  rrr: eee[:dish_type]
                 }
               },
               params[:dishs_info].blank? ?
