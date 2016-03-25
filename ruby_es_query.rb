@@ -42,7 +42,7 @@ class FetchPackQuery < ActiveQuery
                   rrr: eee[:dish_type]
                 }
               },
-              params[:dishs_info].blank? ?
+              params[:info].blank? ?
               {
                 match_all: {}
               } :
