@@ -104,7 +104,7 @@ class FetchPackQuery < ActiveQuery
         # should: {
         #   match: {
         #           platter_description: {
-        #             query: dishs_info[:free_text],
+        #             query: info[:free_text],
         #             type: 'phrase',
         #             boost: 1
         #           }
