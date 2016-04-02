@@ -69,7 +69,7 @@ class FetchPackQuery < ActiveQuery
               {
                 match: {
                   platter_short_desciption:{
-                    query: ww[:free_text],
+                    query: ww[:free_txt],
                     boost: 2
                   }
                 }
