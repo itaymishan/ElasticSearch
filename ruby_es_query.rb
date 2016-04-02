@@ -33,7 +33,7 @@ class FetchPackQuery < ActiveQuery
         filter: {
           bool: {
             must: [
-              params[:xx].blank? ?
+              params[:x].blank? ?
               {
                 match_all: {}
               } :
