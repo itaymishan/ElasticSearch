@@ -12,7 +12,7 @@ class FetchPackQuery < ActiveQuery
                   query: { match_all: {} },
                   filter: {
                     and: [
-                      {term: {'xx.xx': 810 }},
+                      {term: {'xx.xx': 77 }},
                       {term: {'xx.xx': 2 }}
                     ]
                   }
