@@ -90,7 +90,7 @@ class FetchPackQuery < ActiveQuery
   end
 
 
-  def dish_info_filter_new(dishs_info)
+  def dish_info_filter_new(info)
     { # start nested
       bool: {
         must: {
