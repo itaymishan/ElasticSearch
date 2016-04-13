@@ -48,7 +48,7 @@ class FetchPackQuery < ActiveQuery
               } :
               {
                 term: {
-                  platter_type_id: dishs_info[:diet_prefs]
+                  platter_type: dishs_info[:diet_prefs]
                 }
               }
             ]
