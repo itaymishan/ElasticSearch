@@ -95,7 +95,7 @@ class FetchPackQuery < ActiveQuery
       bool: {
         must: {
           term: {
-            dish_type: dishs_info[:tt]
+            dish_type: dishs_info[:t3t]
           },
           term: {
             platter_type_id: dishs_info[:tt]
