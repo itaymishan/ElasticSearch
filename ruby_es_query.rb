@@ -60,7 +60,7 @@ class FetchPackQuery < ActiveQuery
               {
                 match: {
                   xxx_description:{
-                    query: info[:free_text],
+                    query: info[:free_txt],
                     type: 'phrase',
                     boost: 1
                   }
