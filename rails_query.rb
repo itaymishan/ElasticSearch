@@ -86,7 +86,7 @@ class PackageOfferingQuery < ActiveQuery
               }
             },
             # Constraint for platter.
-            params[:platter_id].blank? ? {
+            params[:platter].blank? ? {
               match_all: { }
             } :
             {
