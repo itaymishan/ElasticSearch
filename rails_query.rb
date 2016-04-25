@@ -16,7 +16,7 @@ class PackageOfferingQuery < ActiveQuery
                 }
               }
             },
-            params[:free_text].blank? ? {
+            params[:free_txt].blank? ? {
               match_all: { }
             } :
             {
