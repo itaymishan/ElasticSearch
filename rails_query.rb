@@ -1,7 +1,7 @@
 class PackageOfferingQuery < ActiveQuery
   def build
     {
-      size: 1000,
+      size: 100,
       query: {
         bool: {
           should: [
