@@ -5,7 +5,7 @@ class PackageOfferingQuery < ActiveQuery
       query: {
         bool: {
           should: [
-            params[:free_text].blank? ? {
+            params[:free_txt].blank? ? {
               match_all: { }
             } :
             {
