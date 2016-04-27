@@ -11,7 +11,7 @@ class PackageOfferingQuery < ActiveQuery
             {
               match: {
                 description:{
-                  query: params[:free_text],
+                  query: params[:free_txt],
                   boost: 1
                 }
               }
