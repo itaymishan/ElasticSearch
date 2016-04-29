@@ -35,7 +35,7 @@ class PackageOfferingQuery < ActiveQuery
                 path: :restaurant_locations,
                 filter: {
                   match_all: {
-                    # Must have locations.
+                    
                   }
                 }
               }
