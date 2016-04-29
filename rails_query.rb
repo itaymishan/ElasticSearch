@@ -257,7 +257,7 @@ class PackageOfferingQuery < ActiveQuery
           aggs: {
             restaurant_locations: {
               terms: {
-                size: 1000, # TODO : See how this interacts with pagination.
+                size: 100, # TODO : See how this interacts with pagination.
                 field: :restaurant_location_id
               }
             }
