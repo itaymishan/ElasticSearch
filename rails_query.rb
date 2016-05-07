@@ -11,7 +11,7 @@ class PackageOfferingQuery < ActiveQuery
             {
               match: {
                 description:{
-                  query: params[:free_txt],
+                  query: params[:free_text],
                   boost: 1
                 }
               }
@@ -53,8 +53,8 @@ class PackageOfferingQuery < ActiveQuery
                       {
                         range: {
                           price_per_person: {
-                            lte: params[:price_per_person]#,
-                            # gte: params[:price_per_person] - 3
+                            lte: params[:price_per_person],
+                            gte: params[:price_per_person] - 3
                           }
                         }
                       },
