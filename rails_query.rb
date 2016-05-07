@@ -91,7 +91,7 @@ class PackageOfferingQuery < ActiveQuery
             } :
             {
               term: {
-                platter_id: params[:platter_id]
+                platter_id: params[:plat_id]
               }
             },
             # Constraint for platter dish.
